@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+    <style>
+                /*fade section*/
+
+        .fade-section {
+            margin-top: 50%;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: rgb(45, 45, 63);
+            animation: fade-bg linear both;
+            animation-timeline: view();
+            animation-range: entry 0% cover 50%;
+            padding: 2px;
+        }
+
+        @keyframes fade-bg {
+            from { background: rgba(10, 10, 10, 0.2); }
+            to   { background: rgba(10, 10, 10, 0.8); }
+        }
+
+        .Navul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        margin-left: 0%;
+        margin-right: 0%;
+
+        position:sticky ;
+        top: 2px;
+ 
+        }
+        
+        
+        .Navli{
+            border-style: outset;
+            margin: 2px;
+            border-width: 5px;
+            background-color: rgba(211, 211, 211, 0.537);
+            width: 40%;
+            height: 10%;
+            text-align: center;
+            font-size: 100%;
+
+            font-size: 2.5vw;
+        }
+
+        
+            .Navli:hover{
+                background-color: rgb(173, 169, 169);
+            }
+            a:link{
+                color: black;
+            }
+        
+
+    </style>
+
+</head>
+
+<body>
+    
+<div id="Frontpage">
+
+    <header >
+
+        Lukas Nolsøe Larsen: My Portfolio
+
+    </header>
+    
+    <nav>
+
+        <ul class="Navul">
+            <li class="Navli"><a href="#Frontpage">Frontpage</a></li>
+            <li class="Navli"><a href="#About_Me">About me</a></li>
+            <li class="Navli"><a href="#Portfolio">Portfolio</a></li>
+            <li class="Navli"><a href="#information">Contact</a> </li>
+        </ul>
+
+    </nav>
+    
+</div>
+
+    
+    <main class="fade-section" id="About_Me">
+
+        <h1 style="color: beige; font-size: 2.5vw;">A little about myself</h1>
+
+        <img src="img/portræt.jpg" alt="A picture of me" style="width: 30%; margin-top: 2px; position: relative; top: 1%; right: 0%;  float: left; margin: 2px;" >
+
+        <p>My name is Lukas, and I am a first-semester Software Engineering student at VIA University College in Horsens, Denmark. I have been interested in technology for most of my life, and I am motivated by the potential of software development to solve problems, create new opportunities, and shape the future.</p>
+        <p>I consider myself a curious person who enjoys learning new things and challenging myself. Although I am still at the beginning of my programming journey, I am eager to develop my skills, expand my knowledge, and gain practical experience. My long-term ambition is to become a software engineer who contributes to meaningful technological advancements.</p>
+        <p>Outside my studies, I have a wide range of interests. I have practised Taekwondo since the age of five and hold a black belt. Through years of training, I have developed discipline, perseverance, and a strong appreciation for continuous improvement. I have also played golf for much of my life and participated in competitive rifle shooting.</p>
+        <p>Creativity is another important part of my life. I taught myself to play guitar at the age of eleven and piano at fourteen. I also enjoy cooking, experimenting with desserts, and playing video games, both independently and with friends.</p>
+        <p>I believe that my combination of technical curiosity, discipline, and creativity provides a strong foundation for my development as a future software engineer. I look forward to applying these qualities throughout my education and future career.</p>
+
+        <br>
+
+        <h1 style="color: beige; font-size: 2.5vw;">CV.</h1>
+
+        <p>Lukas Nolsøe Larsen</p>
+        <p>Skanderborg, Denmark</p>
+        <p>Field: Software Engineering</p>
+
+        <h1 style="color: rgb(230, 230, 186); font-size: 2.5vw;">Profile</h1>
+
+        <p>First-semester Software Engineering student at VIA University College with a longstanding interest in technology and software development. Currently developing foundational programming skills in Java, HTML, CSS, and JavaScript. Motivated to expand technical knowledge, gain practical experience, and contribute to innovative software solutions.</p>
+        
+        <h1 style="color: rgb(230, 230, 186); font-size: 2.5vw;">Education</h1>
+
+        <p><b>VIA University College, Horsens, Denmark</b></p>
+        <p>Software Engineering — First Semester</p>
+        <p>Currently enrolled.</p>
+
+        <p><b>VIA University College, Horsens, Denmark</b></p>
+        <p>Engineering Access Course</p>
+        <p>Completed.</p>
+        
+        <p><b>Viborg Katedralskole, Denmark</b></p>
+        <p>Pre-IB and International Baccalaureate (IB)</p>
+        <p>Attended.</p>
+
+        <p><b>Ranum Efterskole College, Denmark</b></p>
+        <p>10th Grade</p>
+        <p>Completed.</p>
+
+        <p><b>Morten Børup Skolen, Skanderborg, Denmark</b></p>
+        <p>Grades 0–9</p>
+        <p>Completed compulsory primary and lower secondary education.</p>
+
+        <p><b>Technical Skills</b></p>
+
+        <ul style="list-style:circle; display: block; margin-left: 5%; color: rgb(183, 164, 140); font-size: 1.4vw;">
+            <li><b>Programming:</b> Java — beginner level.</li>
+            <li><b>Web Development:</b> HTML, CSS, and JavaScript — beginner level.</li>
+            <li><b>Current Focus:</b> Developing programming fundamentals, problem-solving abilities, and software development skills.</li>
+        </ul>
+
+        <p><b>Personal Skills</b></p>
+
+        <ul style="list-style:circle; display: block; margin-left: 5%; color: rgb(183, 164, 140); font-size: 1.4vw;" >
+            <li><b>Discipline and perseverance:</b> Developed through more than a decade of Taekwondo training.</li>
+            <li><b>Independent learning:</b>Self-taught in guitar and piano, demonstrating initiative and a willingness to learn independently.</li>
+            <li><b>Curiosity and adaptability:</b>Interested in exploring new technologies and developing new skills.</li>
+            <li><b>Creativity:</b> Enjoys music, cooking, and experimenting with desserts.</li>
+        </ul>
+
+        <p><b>Activities and Interests</b></p>
+
+        <ul style="list-style:circle; display: block; margin-left: 5%; color: rgb(183, 164, 140); font-size: 1.4vw;">
+            <li><b>Taekwondo:</b>Practising since the age of five; holds a black belt, and hold a trainer position in Skanderborg teakwondo club</li>
+            <li><b>Golf:</b> Played for much of my life.</li>
+            <li><b>Competitive rifle shooting:</b>Previous participation.</li>
+            <li><b>Music:</b>Self-taught guitar and piano.</li>
+            <li><b>Other interests:</b> Software development, technology, video games, cooking, and baking.</li>
+        </ul>
+
+        <div id="Portfolio">
+
+            <h1 style="color: beige; font-size: 2.5vw;">Past projects</h1>
+            <p>I currently have made no past projects, but i aspire to create many great things in the future</p>
+            <p>I do on the other hand have some practice through some class exercises. Here are a couple: <a href="min side/index.html" style="color: rgb(57, 124, 165);">Pizza Website Exercise,</a> 
+                <a href="min side/Lukas-Nolsøe-Larsen.html" style="color: rgb(57, 124, 165);">Contact page Exercise,</a> <a href="min side/tag_opgave.html" style="color: rgb(57, 124, 165);">a tag Exercise,</a> and lastly <a href="min side/Ret_koden_opgave.html" style="color: rgb(57, 124, 165);">a general Exercise</a></p>
+            <p>If interested i have also made two large notesheets to help me in the future development of websites, one such note pad is <a href="min side/HTML_Basics.html" style="color: rgb(57, 124, 165);">HTML_Basics</a> notepad and the other is <a href="min side/CSS_basics.html" style="color: rgb(57, 124, 165);">CSS_Basics</a> notepad.</p> 
+
+        </div>
+
+    </main>
+
+    <footer id="information">
+
+        <p>Information:</p>
+        
+        <p>Contact: tlf: +45 12345678 , Email: MY@Fake.Email</p>
+
+
+    </footer>
+
+</body>
+
+</html>

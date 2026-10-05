@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--a userimput section will require a <form> tag in the form tag the action or where the data should be sent is written inside the form tag-->
+    <form action="action_page.php" method="GET" method="Post"> <!--the GET method adds the data to the url making the data storage insecure this makes the Get 
+        method unsuitable for storing vulnerable data, however this is quite usefull for navigation fx via search boxes or navigation buttons-->
+        <!--post however stores the data within a correlated server built oppn the website-->
+
+
+<!--in this form i have created a textbox which has the id fname the type of imput is text and the imput should correlate to the id fname
+on top of the the box is named fname and a placeholder until something is written within the textbox-->
+        <div>
+        <lable for="fname">First name:</lable>
+        <input type="text" id="fname" name="fname" placeholder="First_Name" required> <!--on any useraction the boolean required can be added which does 
+        not allow for the website to store the data unless the box has been filled-->
+        </div>
+
+        <br>
+
+        <div>
+         <lable for="lname">Last name name:</lable>
+        <input type="text" id="lname" name="lname" placeholder="Last_Name"> <!--hvis man gerne vil sende til fx. google kan man skifte name til q da q er search key til google. her 
+                                                                                ville man blandt andet også andry form action til googles https:-->
+        </div>
+
+        <br>
+
+        <div>
+         <lable for="code">Password</lable>
+<!--in addition to the affermentioned can you also change the type to fx password which hides the text, or add maxlength which only allows as certain ammount of symbols-->
+        <input type="password" id="code" name="code" placeholder="Password" maxlength="12">
+        </div>
+<!--or an Email type which requires an @ and a domain in order to be accepted, or a telephone number via the type="tel" or a date or a number and so on -->
+
+        <br>
+
+        <div>
+         <lable for="Email">Email:</lable>
+        <input type="Email" id="Email" name="Email" placeholder="name@domain.random">
+        </div>
+        
+        <br>
+
+        <div>
+         <lable for="tlf">Phone:</lable>
+        <input type="tel" id="tlf" name="tlf" placeholder="(123)-12345678" pattern="\d{8}"> <!--her har jeg tilføjet en condition til min form som fx her 
+                                                                                                kan man kun skrive et tilfældigt tal 8 gange-->
+        </div>
+        
+        <br>
+
+        <div>
+         <lable for="bday">Birthday:</lable>
+        <input type="date" id="bday" name="bday" placeholder="mm/dd/yyyy">
+        </div>
+        
+        <br>
+
+        <div>
+         <lable for="number">Quantity:</lable>
+        <input type="number" id="number" name="number" placeholder="0">
+        </div>
+
+<!--this is a radion button which allows for you to only pick one out of how many we add-->
+        <div>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." name="title" value="PhD.">
+        </div>
+
+        <br>
+
+<!--this creates a drop down menu where one of how many we add can be picked-->
+        <div>
+            <label for="payment">Payment </label>
+            <select id="payment" name="payment">
+                <option  value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Giftcard">Giftcard</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="sub">Subscribed</label>
+            <input id="sub" type="checkbox" name="Subscribed">
+        </div>
+
+<!--inside the form tag there are inbuilt buttons that you can use-->
+        <div>
+            <input type="Reset">
+            
+            <input type="submit">
+        </div>
+
+    </form>
+
+<body>
+    
+</body>
+</html>
